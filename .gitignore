@@ -21,3 +21,6 @@ SimpleComplex/Debug/SimpleComplex.tlog/SimpleComplex.lastbuildstate
 SimpleComplex/Debug/SimpleComplex.vcxproj.FileListAbsolute.txt
 SimpleComplex/Debug/vc142.idb
 SimpleComplex/Debug/vc142.pdb
+SimpleComplex/.vs/SimpleComplex/v16/ipch/AutoPCH/22815020e8e79495/ENGINE.ipch
+SimpleComplex/.vs/SimpleComplex/v16/ipch/AutoPCH/871dcb3e25988476/GUI.ipch
+SimpleComplex/.vs/SimpleComplex/v16/ipch/AutoPCH/ffea0a99e81403d4/ENGINE.ipch

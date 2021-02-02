@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{aee67764-5667-4992-97f4-10948b3c9c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple">
+      <UniqueIdentifier>{d0f4ab0d-3a29-48ee-bcda-9c27fd552950}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -20,8 +26,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\gui.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Simple.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\simple</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

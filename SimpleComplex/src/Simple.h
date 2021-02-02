@@ -12,16 +12,16 @@
 class Prime
 {
 public:
-	Prime();
+	Prime(int);
 	bool isPrime(int);
 	~Prime();
 private:
 	std::set<int> simple;
 };
 
-Prime::Prime()
+Prime::Prime(int a)
 {
-	int n = 120;
+	int n = a;
 	std::vector<char> prime(n + 1, true);
 	prime[0] = prime[1] = false;
 	for (int i = 2; i <= n; ++i)

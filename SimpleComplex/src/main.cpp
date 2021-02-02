@@ -1,29 +1,10 @@
-#include "Simple.h"
+#include "gui.h"
 
-#include <complex>
-#include <vector>
-
-int main() {
-	Prime prime;
-
-	std::vector<std::pair<int, int>> vec;//all point
-	std::vector<std::pair<int, int>> simplePoint;
-
-	for (int i = 10; i >= -10; i--)
-	{
-		for (int j = -10; j <= 10; j++)
-		{
-			std::complex<int> z(j, i);
-			vec.push_back({ j,i });
-			if (prime.isPrime(std::abs(z))) {
-				std::cout << " ";
-				simplePoint.push_back({ j,i });
-			}
-			else
-				std::cout << ".";
-		}
-		std::cout << "\n";
-	}
+int main()
+{
+	//n->n*n plate,x and y origin,sieve 1..n,simple color,other color
+	GUI gui(500,400,300,1000,sf::Color::Red,sf::Color::White);
+	gui.run();
 
 	return 0;
 }
