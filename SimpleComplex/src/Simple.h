@@ -2,46 +2,23 @@
 
 #include <iostream>
 #include <vector>
-#include <string>
+#include <list>
 #include <set>
-#include <map>
-#include <numeric>
-#include <algorithm>
-#include <utility>
 
 class Prime
 {
 public:
-	Prime(int);
-	bool isPrime(int);
+	typedef long long ll;
+	Prime();
+	Prime(ll);//seed
+	//find in set logn
+	bool isPrime(ll);
+	//realtime O(sqrt(n))
+	bool isPrimeSqrt(ll);
 	~Prime();
 private:
-	std::set<int> simple;
+	bool Sieve;
+	std::set<ll> simple;
+	ll sizeSieve;
 };
 
-Prime::Prime(int a)
-{
-	int n = a;
-	std::vector<char> prime(n + 1, true);
-	prime[0] = prime[1] = false;
-	for (int i = 2; i <= n; ++i)
-		if (prime[i])
-			if (i * 1ll * i <= n)
-				for (int j = i * i; j <= n; j += i)
-					prime[j] = false;
-
-	for (size_t i = 0; i < prime.size(); i++)
-	{
-		if (prime[i] == 1)
-			simple.insert(i);
-	}
-
-}
-
-bool Prime::isPrime(int a) {
-	return simple.find(a) != simple.end();
-}
-
-Prime::~Prime()
-{
-}

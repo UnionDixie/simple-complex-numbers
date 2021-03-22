@@ -24,6 +24,12 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Simple..cpp">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\gui.h">
